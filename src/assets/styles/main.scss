@@ -1,7 +1,6 @@
 @import "reset.scss";
 @import "variables.scss";
 @import "grid.scss";
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 html {
   font-family: 'Lato', sans-serif;
@@ -9,7 +8,7 @@ html {
   font-optical-sizing: auto;
   font-weight: 300;
   line-height: 115%;
-  color: #ffffff;
+  color: #000000;
   /* 62.5% of 16px user agent font size is 10px
   лайфхак для того чтобы удобно использовать единицы измерения rem вместо px,
   теперь 1rem будет равен 10px
@@ -20,166 +19,149 @@ html {
   background: #f3f3f3;
 }
 
-//я добавил цвета как swatches чтоб было проще потом просто их класс применять к отдельным
-//элементам
-.yellow {
-  background-color: #E8C11C;
-}
-
-.orange {
-  background-color: #F59D11;
-}
-
-.graphite {
-  background-color: #1E1E1E;
-}
-
-//один вопрос, я же не ошибся удалив у каждого H элемента CSS font-family тк он
-//ничего и не делал по факту так как у нас на html уже стоит тот же font-family
 h1 {
-  font-size: 100px;
+  font-size: 10rem;
   font-weight: 300;
-  line-height: 120px;
-  letter-spacing: -0.015em;
+  line-height: 12rem;
+  letter-spacing: -0.015rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 6.4rem;
   font-weight: 300;
-  line-height: 76.8px;
-  letter-spacing: -0.005em;
+  line-height: 7.68rem;
+  letter-spacing: -0.005rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 h3 {
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 6rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 h4 {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 400;
-  line-height: 43.2px;
-  letter-spacing: 0.0025em;
+  line-height: 4.32rem;
+  letter-spacing: 0.0025rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 2.88rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 h6 {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.0015em;
+  line-height: 2.4rem;
+  letter-spacing: 0.0015rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 h7 {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
-  line-height: 19.2px;
-  letter-spacing: 0.0015em;
+  line-height: 1.92rem;
+  letter-spacing: 0.0015rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 h8 {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 500;
-  line-height: 14.4px;
-  letter-spacing: 0.0015em;
+  line-height: 1.44rem;
+  letter-spacing: 0.0015rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
-//я все классы тоже перенес, они же нам все равно пригодятся
-.subtitle1 {
-  font-size: 18px;
+.subtitle-main {
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 21.6px;
-  letter-spacing: 0.0015em;
+  line-height: 2.16rem;
+  letter-spacing: 0.0015rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
-.subtitle2 {
-  font-size: 16px;
+.subtitle-secondary {
+  font-size: 1.6rem;
   font-weight: 500;
-  line-height: 19.2px;
-  letter-spacing: 0.001em;
+  line-height: 1.92rem;
+  letter-spacing: 0.001rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
-.body1 {
-  font-size: 16px;
+.body-main {
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 19.2px;
-  letter-spacing: 0.005em;
+  line-height: 1.92rem;
+  letter-spacing: 0.005rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
-.body2 {
-  font-size: 14px;
+.body-secondary {
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 16.8px;
-  letter-spacing: 0.0025em;
+  line-height: 1.68rem;
+  letter-spacing: 0.0025rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
-button {
-  font-size: 16px;
+.button {
+  font-size: 1.6rem;
   font-weight: 500;
-  line-height: 19.2px;
-  letter-spacing: 0.0125em;
+  line-height: 1.92rem;
+  letter-spacing: 0.0125rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 .caption {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 14.4px;
-  letter-spacing: 0.004em;
+  line-height: 1.44rem;
+  letter-spacing: 0.004rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 .overline {
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 12px;
-  letter-spacing: 0.015em;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
