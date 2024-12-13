@@ -20,6 +20,8 @@ html {
   background: #f3f3f3;
 }
 
+//я добавил цвета как swatches чтоб было проще потом просто их класс применять к отдельным
+//элементам
 .yellow {
   background-color: #E8C11C;
 }
@@ -32,6 +34,8 @@ html {
   background-color: #1E1E1E;
 }
 
+//один вопрос, я же не ошибся удалив у каждого H элемента CSS font-family тк он
+//ничего и не делал по факту так как у нас на html уже стоит тот же font-family
 h1 {
   font-size: 100px;
   font-weight: 300;
@@ -110,6 +114,7 @@ h8 {
   text-decoration-skip-ink: none;
 }
 
+//я все классы тоже перенес, они же нам все равно пригодятся
 .subtitle1 {
   font-size: 18px;
   font-weight: 400;
