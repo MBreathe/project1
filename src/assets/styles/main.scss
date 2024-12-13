@@ -1,0 +1,22 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "grid.scss";
+
+html {
+  // TODO подключи тут нужный шрифт
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  line-height: 115%;
+  // TODO подключи тут нужный цвет
+  color: var(--color-black);
+  /* 62.5% of 16px user agent font size is 10px
+  лайфхак для того чтобы удобно использовать единицы измерения rem вместо px,
+  теперь 1rem будет равен 10px
+  */
+  font-size: 62.5% !important;
+  text-rendering: auto !important;
+  -webkit-font-smoothing: auto !important;
+  background: #f3f3f3;
+}
