@@ -16,8 +16,7 @@ TODO тут просто дернул с одного своего проект�
 
 // это scss переменные
 $columns: 12;
-$gutter: 3rem;
-$gutter-column: 1.5rem;
+$gutter-column: 0.5rem;
 
 .row {
   display: flex;
@@ -57,61 +56,21 @@ $gutter-column: 1.5rem;
   margin: 0 auto;
 }
 
-/* размеры контентной области для каждого брейкпоинта,
-   у размеров выше lg включительно учитываяем паддинг контейнера слева и справа
-   размером в 0.9rem и прибавляем 1.8rem
-   тут надо будет поменять под дизайн нашего проекта
-*/
-@media (min-width: map-get($breakpoints, "xxs")) {
-  .container {
-    padding: 0 2.2rem;
-  }
-}
-
-@media (min-width: map-get($breakpoints, "xs")) {
-  .container {
-    padding: 0 2.6rem;
-  }
-}
 
 @media (min-width: map-get($breakpoints, "sm")) {
   .container {
-    padding: 0 0.9rem;
+    padding: 0 3.2rem;
   }
 }
 
 @media (min-width: map-get($breakpoints, "md")) {
   .container {
-    max-width: 64rem;
+    max-width: 96rem;
   }
 }
 
 @media (min-width: map-get($breakpoints, "lg")) {
   .container {
-    max-width: 92.4rem;
-  }
-}
-
-@media (min-width: map-get($breakpoints, "xl")) {
-  .container {
-    max-width: 100rem;
-  }
-}
-
-@media (min-width: map-get($breakpoints, "xxl")) {
-  .container {
-    max-width: 121.2rem;
-  }
-}
-
-@media (min-width: map-get($breakpoints, "xxxl")) {
-  .container {
-    max-width: 130.8rem;
-  }
-}
-
-@media (min-width: map-get($breakpoints, "xxxxl")) {
-  .container {
-    max-width: 140.4rem;
+    max-width: 137.6rem;
   }
 }
