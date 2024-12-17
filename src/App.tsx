@@ -1,36 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import './assets/styles/main.scss';
+import burger from '/hands-on-burger.png'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    const columnStyle = {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+    };
+    const marginS = {
+        margin: "0 0 1.2rem 0",
+    }
+    const marginM = {
+        margin: "1.6rem 0 0 0",
+    }
+    const buttonStyle = {
+        backgroundColor: "var(--color-orange)",
+        textAlign: "center",
+        width: "100%",
+        height: "3.4rem",
+        lineHeight: "1.7rem",
+        ...marginM
+    };
+    const image = {
+        width: "100%",
+        height: "100%",
+        objectFit: "contain",
+    }
+    return (
+        <>
+            <div className="container">
+                <div className="row">
+                    <div className="column column-sm-6">
+                        <div style={columnStyle}>
+                            <div className="h7" style={marginS}>
+                                Попробуй этот
+                                живой бургер!
+                            </div>
+                            <p className="caption">
+                                Потрясающе аппетитный
+                                бургер с соусом чимичури уже ждет тебя!
+                            </p>
+                            <button className="button" style={buttonStyle}>Доставка</button>
+                            <button className="button" style={buttonStyle}>Заказать</button>
+                        </div>
+                    </div>
+                    <div className="column column-sm-6">
+                        <img style={image} src={burger}/>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
 }
 
 export default App
